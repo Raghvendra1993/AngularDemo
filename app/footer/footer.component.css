@@ -1,0 +1,29 @@
+.footer{
+    /* margin-top: 100px; */
+    background-color:  #888;;
+    padding: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    position: absolute;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    /* border-radius: 5px; */
+    font-size: 20px;
+}
+.container{
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+.foottext{
+    margin-top: 50px;
+
+}
+.btn{
+    border: none;
+    border-radius: 50%;
+}
+.btn:hover{
+    background-color:#96bb7c ;
+}
+

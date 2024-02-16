@@ -1,0 +1,50 @@
+<div class="User_Data_Display">
+    <h1 style="text-align: center; margin-top: 20px; margin-bottom: 20px;">Registered Users</h1>
+<table id="user">
+    <tr style="border: 1px; justify-items: center;">
+        <th>Id</th>
+        <th>First Name</th>
+        <th>Last Name</th>
+        <th>D/O/B</th>
+        <th>Age(Year)</th>
+        <th>Contact</th>
+        <th>Email</th>
+        <th>Password</th>
+        <th>Gender</th>
+        <th>Address</th>
+        <th>Pincode</th>
+        <th>State</th>
+        <th>City</th>
+        <th>Actions</th>
+    </tr>
+    <tr *ngFor="let user of allUsersData index as i">
+        <td>{{i+1}}</td>
+        <td>{{user.firstName | uppercase}}</td>
+        <td>{{user.lastName | uppercase}}</td>
+        <td>{{user.dob }}</td>
+        <td>{{user.dob | age }}</td>
+        <td>{{user.mobile }}</td>
+        <td>{{user.emailAddress | titlecase}}</td>
+        <td>{{user.password | uppercase}}</td>
+        <td>{{user.gender | titlecase}}</td>
+        <td>{{user.address | titlecase}}</td>
+        <td>{{user.pincode}}</td>
+        <td>{{user.state | titlecase}}</td>
+        <td>{{user.city | titlecase}}</td>
+        <td> 
+            <a routerLink="/update/{{user.userId}}" class="btn-edit" ><i class="fas fa-edit"></i></a>
+            <button class="btn-delete"(click)="onDeleteData(user.userId)"><i class="fa fa-trash"></i></button>
+        </td>
+    </tr>
+</table>
+<div class="btn-action">
+    <button class="btn-fetch" (click)="onFetchData()">Show Registered User</button>
+</div>
+<div class="btn-action">
+    <button class="btn-fetch" (click)="onSignOut()">SignOut</button>
+</div>
+
+
+</div>
+
+

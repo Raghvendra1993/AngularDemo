@@ -1,0 +1,27 @@
+.navbar{
+   z-index: 9;
+}
+.side-nav-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.side-nav-button:hover{
+    background-color: rgb(85, 83, 83);
+    border-radius: 30%;
+}
+.fixed{
+    position: fixed;
+    width: 90%;
+    transition: 0.2s linear;
+    top:0px;
+
+}
+.nofixed{
+    position: sticky;
+    transition: 0.2s linear;
+    top: 0px;
+}
